@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    background-color: white;
+     border-bottom: 1px solid lightgray;
+}
+.left-section{
+    padding: 10px;
+    .logo-container{
+        padding-left: 40px;
+        .logo-img{
+            cursor: pointer;
+            background-size: cover;
+        }
+    }
+}
+
+.right-section{
+    display: flex;
+}
+.lang-container{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 17px;
+    .lang-global-img{
+        width: 25px;
+        color: grey;
+    }
+    .lang-name{
+        text-align: center;
+        color: rgb(140, 140, 144);
+    }
+}
+.lang-container:hover{
+    background-color: rgb(240, 236, 236);
+    border-radius: 5px;
+}
+.login-container{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 50px;
+    padding: 17px;
+    .login-lock-img{
+        width: 35px;
+        border-radius: 20px;
+        border: 4px solid grey;
+        padding: 3px;
+    }
+}
+.login-container:hover{
+    background-color: rgb(240, 236, 236);
+    border-radius: 5px;
+}
