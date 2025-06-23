@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pfizer - Digital on Demand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/top-nav.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="scripts/header.js"></script>
 </head>
 <body>
     <header class="header-section">
@@ -18,10 +26,62 @@
             <div><img src="Assets/lang-icon.png" class="lang-global-img"></div>
             <div><p class="lang-name">English</p></div>
         </div>
-        <div class="login-container">
-            <img src="Assets/lock-icon.jpg" class="login-lock-img">
+        <div class="login-container" onclick="displayLoginPopUp()">
+            <img src="Assets/lock-icon.jpg" class="login-lock-img" id="login-lock-img" >
+            <img src="Assets/down-arrow.png" class="down-arrow">
+            <div class="login-pop-up" id="login-pop-up">
+                <p>Log in</p>
+            </div>
         </div>
        </div>
     </header>
+    <section class="dod-nav">
+        <div class="dod-nav-item">
+            <img src="Assets/top-support-icon.png">
+            <p>Top Support</p>
+            <img src="Assets/down-arrow.png">
+        </div>
+        <div class="dod-nav-item">
+            <img src="Assets/resources-icon.png">
+            <p>Resources</p>
+            <img src="Assets/down-arrow.png">
+        </div>
+        <div class="dod-nav-item">
+            <img src="Assets/manage-access-icon.png">
+            <p>Manage Access</p>
+            <img src="Assets/down-arrow.png">
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="head-text">Welcome to Pfizer Digital!</div>
+        <div class="sub-text">Hello! You are online but not connected or logged in to the Pfizer network.</div>
+    </section>
+    <section class="features-section">
+        <div class="tile-container">
+            <img src="Assets/connect-img.jpg">
+            <p class="main-text">Connect Now</p>
+            <p>VPN service and Virtual Desktop provide access to the Pfizer network while working remotely</p>
+        </div>
+        <div class="tile-container">
+            <img src="Assets/dod-lock-img.jpg">
+            <p class="main-text">Manage Password</p>
+            <p>Password On Demand allows you to unlock your network account or reset your password without having to call the service desk. Note: pre-registration is required</p>
+        </div>
+        <div class="tile-container">
+            <img src="Assets/contact-service-img.jpg">
+            <p class="main-text">Contact Service Desk</p>
+            <p>If after utilizing the other 2 options you are still unable to connect, contact the service desk</p>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="dod-info">
+            <img src="Assets/dod_portal_footer_logo.png">
+            <p>Digital On Demand offers flexible and convenient support options. Colleagues can use its custom tools and knowledge articles to get the technology support they need, when they need it.</p>
+        </div>
+        <div class="did-you-know">
+            <p>Did You Know?</p>
+            <p>Using Pfizer Digital self-service tools instead of calling the Pfizer Digital Service Desk saves you time and saves Pfizer millions. Thank you for visiting Digital On Demand for your technical support needs.</p>
+        </div>
+    </footer>
 </body>
 </html>

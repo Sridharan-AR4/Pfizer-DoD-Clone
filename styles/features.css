@@ -1,0 +1,36 @@
+.features-section{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 60px 120px;
+}
+.tile-container{
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 12.5px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(213, 209, 209);
+    p{
+        text-align: center;
+    }
+    .main-text{
+        color: blue;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    img{
+        width: 130px;
+    }
+    transition: transform 0.2s ease-in-out;
+}
+.tile-container:hover {
+  transform: scale(1.05);
+}

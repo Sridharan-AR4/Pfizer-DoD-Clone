@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Lato;
 }
 body{
     
@@ -52,20 +53,49 @@ body{
     border-radius: 5px;
 }
 .login-container{
-    cursor: pointer;
     display: flex;
     align-items: center;
     margin-left: 15px;
     margin-right: 50px;
     padding: 17px;
+    cursor: pointer;
+    position: relative;
     .login-lock-img{
         width: 35px;
         border-radius: 20px;
         border: 4px solid grey;
         padding: 3px;
     }
+    .down-arrow{
+        /* cursor: pointer; */
+        width: 30px;
+        border-radius: 20px;
+    }
+    .login-pop-up{
+        display: none;
+        width: 175px;
+        height: 70px;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 69px;
+        right: 0px;
+        border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        p{
+            padding: 10px;
+            display: block;
+            width: 100%;
+            color: rgb(126, 123, 123);
+            cursor: pointer;
+        }
+        p:hover{
+            background-color: rgb(240, 238, 238);
+        }
+    }
 }
 .login-container:hover{
     background-color: rgb(240, 236, 236);
     border-radius: 5px;
 }
+
