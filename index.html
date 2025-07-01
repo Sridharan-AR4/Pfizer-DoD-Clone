@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/features.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="scripts/header.js"></script>
+    <script src="scripts/top-nav.js"></script>
 </head>
 <body>
     <header class="header-section">
@@ -49,20 +50,31 @@
        </div>
     </header>
     <section class="dod-nav">
-        <div class="dod-nav-item">
+        <div class="dod-nav-item" onclick="displayOrHideMenu(0)" >
             <img src="Assets/top-support-icon.png">
             <p>Top Support</p>
-            <img src="Assets/down-arrow.png">
+            <img src="Assets/down-arrow.png" class="down-arrow" id="dod-nav-item-img-0">
         </div>
-        <div class="dod-nav-item">
+        <div class="menu" id="menu">
+            <!-- <h2>Top Support</h2>
+            <h4>Trending Topics</h4> -->
+            <!-- <div class="menu-items" id="menu-items">
+                <a href="">PingID: Manage Mobile Devices</a>
+                <a href="">PingID: Configure Mobile App Prereqs</a>
+                <a href="">PingID: Register Mobile Phone First Time</a>
+                <a href="">PingID: Transfer App to New Mobile Phone</a>
+                <a href="">NewLaptop4U Setup Instructions</a>
+            </div> -->
+        </div>
+        <div class="dod-nav-item" onclick="displayOrHideMenu(1)">
             <img src="Assets/resources-icon.png">
             <p>Resources</p>
-            <img src="Assets/down-arrow.png">
+            <img src="Assets/down-arrow.png" id="dod-nav-item-img-1">
         </div>
-        <div class="dod-nav-item">
+        <div class="dod-nav-item" onclick="displayOrHideMenu(2)">
             <img src="Assets/manage-access-icon.png">
             <p>Manage Access</p>
-            <img src="Assets/down-arrow.png">
+            <img src="Assets/down-arrow.png" id="dod-nav-item-img-2">
         </div>
     </section>
     <section class="main-section">

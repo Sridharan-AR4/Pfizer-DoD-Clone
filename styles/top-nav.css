@@ -12,6 +12,7 @@
     background-color: white;
 }
 .dod-nav-item{
+    position: relative;
     display: flex;
     cursor: pointer;
     gap: 5px;
@@ -20,8 +21,37 @@
     img{
         width: 20px;
     }
+    /* .down-arrow{
+        rotate: 180deg;
+    } */
     p{
         font-size: 14px;
         color: rgb(126, 123, 123);
     }
+}
+.menu{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: #000484;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    h2{
+        font-weight: 350;
+    }
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    border-top: 1px solid #0f6582 ;
+    padding-top: 10px;
 }
