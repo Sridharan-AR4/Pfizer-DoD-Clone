@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pfizer - Digital on Demand</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/top-nav.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -22,9 +22,22 @@
         </div>
        </div>
        <div class="right-section">
-        <div class="lang-container">
+        <div class="lang-container" onclick="displayOrHideLangPopUP()">
             <div><img src="Assets/lang-icon.png" class="lang-global-img"></div>
             <div><p class="lang-name">English</p></div>
+            <div class="choose-lang-container" id="choose-lang-container">
+                <div class="choose-lang-text">Chosse your language</div>
+                <div class="langs-list">
+                    <p>Deutsch</p>
+                    <p>Portugues</p>
+                    <p>English</p>
+                    <p>Francais</p>
+                </div>
+                <div class="view-all">
+                    <a href="">View all</a>
+                    <img src="Assets/icons8-arrow.png" >
+                </div>
+            </div>
         </div>
         <div class="login-container" onclick="displayLoginPopUp()">
             <img src="Assets/lock-icon.jpg" class="login-lock-img" id="login-lock-img" >
