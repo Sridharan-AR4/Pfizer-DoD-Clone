@@ -2,9 +2,9 @@
 
 // console.log(menu[1].menuItems[0]);
 const menu = [
-{name : "Top Support", heading : "Trending Topics", menuItems : ["PingID: Manage Mobile Devices", "PingID: Configure Mobile App Prereqs", "PingID: Register Mobile Phone First Time", "PingID: Transfer App to New Mobile Phone", "NewLaptop4U Setup Instructions"], open : false},
-{name : "Resources", heading : "Contact Us", menuItems : ["Service Desk"], open : false},
-{name : "Manage Access", heading : "Connectivity", menuItems : ["Password On Demand", "Connect On Demand"], open : false}
+{name : "Top Support", heading : "Trending Topics", menuItems : ["PingID: Manage Mobile Devices", "PingID: Configure Mobile App Prereqs", "PingID: Register Mobile Phone First Time", "PingID: Transfer App to New Mobile Phone", "NewLaptop4U Setup Instructions"], links : ["https://pfeprod.service-now.com/digitalondemand?id=rightanswers_sp_solution&q=230119090108353", "https://pfeprod.service-now.com/digitalondemand?id=rightanswers_sp_solution&q=230628111911313", "https://pfeprod.service-now.com/digitalondemand?id=rightanswers_sp_solution&q=230119141925107", "https://pfeprod.service-now.com/digitalondemand?id=rightanswers_sp_solution&q=230531124735040", "https://pfeprod.service-now.com/digitalondemand?id=rightanswers_sp_solution&q=210330162530707"], open : false},
+{name : "Resources", heading : "Contact Us", menuItems : ["Service Desk"], links : ["https://pfeprod.service-now.com/digitalondemand?id=pfe_digitalondemand_contact_service_desk"], open : false},
+{name : "Manage Access", heading : "Connectivity", menuItems : ["Password On Demand", "Connect On Demand"], links : ["https://password.pfizer.com/", "https://pfeprod.service-now.com/digitalondemand?id=rightanswers_sp_solution&q=180327154249953"], open : false}
 ]
 
 function displayOrHideMenu(index){
@@ -24,6 +24,7 @@ function displayOrHideMenu(index){
     const name = menu[index].name;
     const heading = menu[index].heading;
     const items = menu[index].menuItems;
+    const links = menu[index].links;
 
     const h2 = document.createElement('h2');
     h2.innerHTML = name;
@@ -35,9 +36,11 @@ function displayOrHideMenu(index){
     
     const menuitems = document.createElement('div');
     menuitems.className = 'menu-items';
-    for(let item of items){
+    for(let i = 0; i < items.length; i++){
         const link = document.createElement('a');
-        link.innerHTML = item;
+        link.innerHTML = items[i];
+        link.href = links[i];
+        link.target = "_blank" ;
         menuitems.appendChild(link);
     }
     menudiv.appendChild(menuitems);

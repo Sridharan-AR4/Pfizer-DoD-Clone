@@ -5,21 +5,25 @@
     margin-left: 120px;
     margin-right: 120px;
     background-image: url("hero-background-img.jpg");
+    background-size: cover;
     align-items: center;
     justify-content: center;
-    padding: 160px;
+    padding-top: 170px;
+    padding-bottom: 170px;
     border-radius: 25px;
     .head-text{
         color: white;
-        font-size: 42px;
+        font-size: 40px;
         line-height: 20px;
         font-weight: 300;
         letter-spacing: 2px;
         margin-bottom: 25px;
+        text-align: center;
     }
     .sub-text{
         color: white;
         font-size: 20px;
         letter-spacing: 2px;
+        text-align: center;
     }
 }
